@@ -10,28 +10,35 @@
   <body>
     <div class="slider-container">
       <div class="left-slide">
-        <div style="background-color: #FD3555">
+        <div style="background-color:<%= col1 %>">
           <h1><%= head1 %></h1>
           <p><%= para1 %></p>
+          <form action="/" method="post">
+            <label for="Heading Change">Heading Change:</label>
+            <textarea id="Heading Change" name="Heading Change" rows="2" cols="30">
+              </textarea>
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
         </div>
-        <div style="background-color: #2A86BA">
-          <h1><%= head2 %></h1>
-          <p><%= para2 %></p>
-        </div>
-        <div style="background-color: #252E33">
+        <div style="background-color:<%= col2 %>">
           <h1><%= head3 %></h1>
           <p><%= para3 %></p>
         </div>
-        <div style="background-color: #FFB866">
+        <div style="background-color:<%= col3 %>">
+          <h1><%= head2 %></h1>
+          <p><%= para2 %></p>
+        </div>
+        <div style="background-color:<%= col4 %>">
           <h1><%= head4 %></h1>
           <p><%= para4 %></p>
         </div>
       </div>
       <div class="right-slide">
-        <div style="background-image: url('<%= picUrl %>')"></div>
+        <div style="background-image: url('<%= picUrl3 %>')"></div>
         <div style="background-image: url('<%= picUrl1 %>')"></div>
         <div style="background-image: url('<%= picUrl2 %>')"></div>
-        <div style="background-image: url('<%= picUrl3 %>')"></div>
+        <div style="background-image: url('<%= picUrl %>')"></div>
       </div>
       <div class="action-buttons">
         <button class="down-button">

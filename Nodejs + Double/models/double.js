@@ -10,6 +10,9 @@ const doubleSchema = mongoose.Schema({
    p : {
         type: "String"
      },
+   col : {
+      type: "String"
+   },
 })
 
 module.exports = mongoose.model("double", doubleSchema)
